@@ -10,14 +10,14 @@
   app.apiKey = 'AIzaSyB1GbyVSIOK12RJbFMkaIJjwhVNG-b8fjc';
   app.dataSources = {
     haplotype: {
-      id:'1TfD99thQGTo9XxMSWwx1QsNQBb2H_FhcPJJuryjc',
+      id:'1j4WGDHT4znA4OQrMNLXVH8xbFNtakHEZXYln2HiI',
       columns:['class_1','class_2','class_3','class_4','class_5','class_6','class_7','class_8'],
       colors:['#36648b','#5cacee','#cd6600','#ff7f00','#ee9a49','#d2b48c','#999999','#cccccc'],
       labels:['WD1','WD2','SD1','SD2','SD3','SD4','UD1','UD2'],
       label: 'DOG1 Haplotype'
       },
     dormancy: {
-      id:'1rKBG1ciSaQJA-wlfzaeBvQpyXqVcLWXE86x7bYSe',
+      id:'1BiFr02lzhCYVzIk6S1cnS4mF4h0mAqOunVCbfhp-',
       columns:['class_1','class_2','class_3','class_4','class_5'],
       colors:['#EE7F00','#FFA54F','#CCCCCC','#63B8FF','#4F94CD'],
       labels:['0 - 20','20 - 40','40 - 60','60 - 80',' 80 - 100'],
@@ -88,7 +88,7 @@
 
   app._getFusionParams = function(route) {
     var datasource = this.dataSources[route];
-    var query = 'SELECT tg_ecotypeid,name,longitude,latitude,class_col,GR21,' + datasource.columns.join(',') + ' FROM ' + datasource.id;
+    var query = 'SELECT id,name,longitude,latitude,class_col,GR21,' + datasource.columns.join(',') + ' FROM ' + datasource.id;
     return { sql: query, key: this.apiKey };
   };
   app.openInfoWindow = function() {
