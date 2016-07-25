@@ -10,14 +10,14 @@
   app.apiKey = 'AIzaSyB1GbyVSIOK12RJbFMkaIJjwhVNG-b8fjc';
   app.dataSources = {
     haplotype: {
-      id:'1j4WGDHT4znA4OQrMNLXVH8xbFNtakHEZXYln2HiI',
-      columns:['class_1','class_2','class_3','class_4','class_5','class_6','class_7','class_8'],
-      colors:['#36648b','#5cacee','#cd6600','#ff7f00','#ee9a49','#d2b48c','#999999','#cccccc'],
-      labels:['WD1','WD2','SD1','SD2','SD3','SD4','UD1','UD2'],
+      id:'1IYcgnJEjbCmfxN4td3cWHyVBVXQ9fXi1CweBfyfg',
+      columns:['class_1','class_2','class_3','class_4'],
+      colors:['#36648b','#cd6600','#ff7f00','#d2b48c'],
+      labels:['ND','D2','D3','D4'],
       label: 'DOG1 Haplotype'
       },
     dormancy: {
-      id:'1BiFr02lzhCYVzIk6S1cnS4mF4h0mAqOunVCbfhp-',
+      id:'1If0gsxl-Th7P2RZZb_JbFX_LeH4Tu6n1aJsubpsP',
       columns:['class_1','class_2','class_3','class_4','class_5'],
       colors:['#EE7F00','#FFA54F','#CCCCCC','#63B8FF','#4F94CD'],
       labels:['0 - 20','20 - 40','40 - 60','60 - 80',' 80 - 100'],
@@ -113,5 +113,8 @@
     if (this.mapLoaded) {
       this.fusionresponse = this.$.localstorage.value;
     }
+  };
+  app._getLocalStorageKey = function(route) {
+    return route + '__' + this.dataSources[route].id;
   };
 })(document);

@@ -54,7 +54,7 @@
   <body unresolved class="fullbleed">
     <span id="browser-sync-binding"></span>
     <template is="dom-bind" id="app">
-      <iron-localstorage id="localstorage" name="{{route}}" on-iron-localstorage-load-empty="loadDataFromBackend" on-iron-localstorage-load="onLoadDataFromCache"></iron-localstorage>
+      <iron-localstorage id="localstorage" name="{{_getLocalStorageKey(route)}}" on-iron-localstorage-load-empty="loadDataFromBackend" on-iron-localstorage-load="onLoadDataFromCache"></iron-localstorage>
      <paper-dialog id="infoDialog" modal>
           <h2>What is this about?</h2>
           <paper-dialog-scrollable>
