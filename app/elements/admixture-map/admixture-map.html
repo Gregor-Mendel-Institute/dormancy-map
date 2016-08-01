@@ -192,7 +192,7 @@
         },
         infoWindow: null,
         onMouseOverCluster: function(e) {
-          var cluster = Polymer.dom(e).localTarget;
+          var cluster = Polymer.dom(e).rootTarget;
           this.displayMarkers = this._getMarkersFromCluster(cluster);
           this._showOverlay(cluster.clusterSubIcon.data,'Cluster of ' + cluster.markers.length+' accessions');
         },
