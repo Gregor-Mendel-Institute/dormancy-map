@@ -12,14 +12,14 @@
     haplotype: {
       id:'1IYcgnJEjbCmfxN4td3cWHyVBVXQ9fXi1CweBfyfg',
       columns:['class_1','class_2','class_3','class_4'],
-      colors:['#36648b','#cd6600','#ff7f00','#d2b48c'],
+      colors:['#4F94CD','#cd3700','#ff7f00','#d2b48c'],
       labels:['ND','D2','D3','D4'],
       label: 'DOG1 Haplotype'
       },
     dormancy: {
       id:'1If0gsxl-Th7P2RZZb_JbFX_LeH4Tu6n1aJsubpsP',
       columns:['class_1','class_2','class_3','class_4','class_5'],
-      colors:['#EE7F00','#FFA54F','#CCCCCC','#63B8FF','#4F94CD'],
+      colors:['#CD3700','#FF7F00','#CCCCCC','#63B8FF','#36648B'],
       labels:['0 - 20','20 - 40','40 - 60','60 - 80',' 80 - 100'],
       label: 'Germination Rate (GR21)'
     }
