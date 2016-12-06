@@ -78,12 +78,31 @@
      }
      .legend-container {
         padding:10px;
+        text-align:center;
+     }
+     .fieldsite-popup {
+       max-width:150px;
+     }
+     .fieldsite-popup img{
+       width:100%;
      }
   </style>
   <template>
     <div class="fit">
       <google-map api-key="AIzaSyB1GbyVSIOK12RJbFMkaIJjwhVNG-b8fjc" latitude="59.08" map="{{map}}" id="mapelement"  longitude="15.653635" zoom="6" additional-map-options='{"panControl": "false","panControlOptions":{"position":"3"},"scaleControl": "true","zoomControlOptions":{"style":"2","position":"8"},"mapTypeControl": "true","mapTypeControlOptions": {"style": "4","position":"2"}}'>
         <google-map-marker id="accessionMarker" z-index="9999" latitude="0" longitude="0" hidden$="{{!showAccessionMarker}}"></google-map-marker>
+        <google-map-marker z-index="9999" latitude="56.066721" longitude="13.944655" title="Ullstorp" open>
+          <div class="fieldsite-popup">
+            <div>Ullstorp field site</div>
+            <img src="images/ullstorp.jpg">
+          </div>
+        </google-map-marker>
+        <google-map-marker z-index="9999" latitude="55.905647" longitude="14.260095" title="Rathckegården" open>
+          <div class="fieldsite-popup">
+            <div>Rathckegården field site</div>
+            <img src="images/rathckegarden.jpg">
+          </div>
+        </google-map-marker>
       </google-map>
       <google-map-markerclusterer id="markerclusterer" map="{{map}}" markers="{{markers}}" average-center="{{averageCenter}}"
       styles="{{styles}}" on-google-map-markercluster-clustering-end="onClusteringEnd" colors="{{colors}}">
