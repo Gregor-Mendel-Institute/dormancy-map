@@ -21,7 +21,7 @@
 ## hydrolysis : <code>object</code>
 Static analysis for Polymer.
 
-**Kind**: global namespace  
+**Kind**: global namespace
 
 * [hydrolysis](#hydrolysis) : <code>object</code>
   * [.Analyzer](#hydrolysis.Analyzer)
@@ -73,7 +73,7 @@ Static analysis for Polymer.
 
 <a name="hydrolysis.Analyzer"></a>
 ### hydrolysis.Analyzer
-**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>
 
 * [.Analyzer](#hydrolysis.Analyzer)
   * [new Analyzer(attachAST, [loader])](#new_hydrolysis.Analyzer_new)
@@ -113,56 +113,56 @@ A database of Polymer metadata defined in HTML
 #### analyzer.elements : <code>Array.&lt;ElementDescriptor&gt;</code>
 A list of all elements the `Analyzer` has metadata for.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+elementsByTagName"></a>
 #### analyzer.elementsByTagName : <code>Object.&lt;string, ElementDescriptor&gt;</code>
 A view into `elements`, keyed by tag name.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+features"></a>
 #### analyzer.features : <code>Array.&lt;FeatureDescriptor&gt;</code>
 A list of API features added to `Polymer.Base` encountered by the
 analyzer.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+behaviors"></a>
 #### analyzer.behaviors : <code>Array.&lt;BehaviorDescriptor&gt;</code>
 The behaviors collected by the analysis pass.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+behaviorsByName"></a>
 #### analyzer.behaviorsByName : <code>Object.&lt;string, BehaviorDescriptor&gt;</code>
 The behaviors collected by the analysis pass by name.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+html"></a>
 #### analyzer.html : <code>Object.&lt;string, AnalyzedDocument&gt;</code>
 A map, keyed by absolute path, of Document metadata.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+parsedDocuments"></a>
 #### analyzer.parsedDocuments : <code>Object</code>
 A map, keyed by path, of HTML document ASTs.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+parsedScripts"></a>
 #### analyzer.parsedScripts : <code>Object.&lt;string, Array.&lt;ParsedJS&gt;&gt;</code>
 A map, keyed by path, of JS script ASTs.
 
 If the path is an HTML file with multiple scripts, the entry will be an array of scripts.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+_content"></a>
 #### analyzer._content : <code>Object</code>
 A map, keyed by path, of document content.
 
-**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance property of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+_getDependencies"></a>
 #### analyzer._getDependencies(href, [found], [transitive]) ⇒ <code>Array.&lt;string&gt;</code>
 List all the html dependencies for the document at `href`.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
-**Returns**: <code>Array.&lt;string&gt;</code> - A list of all the html dependencies.  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
+**Returns**: <code>Array.&lt;string&gt;</code> - A list of all the html dependencies.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -174,7 +174,7 @@ List all the html dependencies for the document at `href`.
 #### analyzer.elementsForFolder(href) ⇒ <code>Array.&lt;ElementDescriptor&gt;</code>
 Returns the elements defined in the folder containing `href`.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -184,7 +184,7 @@ Returns the elements defined in the folder containing `href`.
 #### analyzer.behaviorsForFolder(href) ⇒ <code>Array.&lt;BehaviorDescriptor&gt;</code>
 Returns the behaviors defined in the folder containing `href`.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -195,7 +195,7 @@ Returns the behaviors defined in the folder containing `href`.
 Returns a promise that resolves to a POJO representation of the import
 tree, in a format that maintains the ordering of the HTML imports spec.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -210,7 +210,7 @@ with the document they link to. .css and .script files become &lt;style&gt; and
 The elements in the loaded document are unmodified from their original
 documents.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -221,7 +221,7 @@ documents.
 #### analyzer.nodeWalkDocuments(predicate) ⇒ <code>Object</code>
 Calls `dom5.nodeWalkAll` on each document that `Anayzler` has laoded.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -231,7 +231,7 @@ Calls `dom5.nodeWalkAll` on each document that `Anayzler` has laoded.
 #### analyzer.nodeWalkAllDocuments(predicate) ⇒ <code>Object</code>
 Calls `dom5.nodeWalkAll` on each document that `Anayzler` has laoded.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -241,12 +241,12 @@ Calls `dom5.nodeWalkAll` on each document that `Anayzler` has laoded.
 #### analyzer.annotate()
 Annotates all loaded metadata with its documentation.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer+clean"></a>
 #### analyzer.clean()
 Removes redundant properties from the collected descriptors.
 
-**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: instance method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 <a name="hydrolysis.Analyzer.analyze"></a>
 #### Analyzer.analyze(href, [options]) ⇒ <code>Promise.&lt;Analyzer&gt;</code>
 Shorthand for transitively loading and processing all imports beginning at
@@ -254,9 +254,9 @@ Shorthand for transitively loading and processing all imports beginning at
 
 In order to properly filter paths, `href` _must_ be an absolute URI.
 
-**Kind**: static method of <code>[Analyzer](#hydrolysis.Analyzer)</code>  
+**Kind**: static method of <code>[Analyzer](#hydrolysis.Analyzer)</code>
 **Returns**: <code>Promise.&lt;Analyzer&gt;</code> - A promise that will resolve once `href` and its
-    dependencies have been loaded and analyzed.  
+    dependencies have been loaded and analyzed.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -265,7 +265,7 @@ In order to properly filter paths, `href` _must_ be an absolute URI.
 
 <a name="hydrolysis.FileLoader"></a>
 ### hydrolysis.FileLoader
-**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>
 
 * [.FileLoader](#hydrolysis.FileLoader)
   * [new FileLoader()](#new_hydrolysis.FileLoader_new)
@@ -283,7 +283,7 @@ Add an instance of a Resolver class to the list of url resolvers
 Ordering of resolvers is most to least recently added
 The first resolver to "accept" the url wins.
 
-**Kind**: instance method of <code>[FileLoader](#hydrolysis.FileLoader)</code>  
+**Kind**: instance method of <code>[FileLoader](#hydrolysis.FileLoader)</code>
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -296,8 +296,8 @@ Return a promise for an absolute url
 Url requests are deduplicated by the loader, returning the same Promise for
 identical urls
 
-**Kind**: instance method of <code>[FileLoader](#hydrolysis.FileLoader)</code>  
-**Returns**: <code>Promise.&lt;string&gt;</code> - A promise that resolves to the contents of the URL.  
+**Kind**: instance method of <code>[FileLoader](#hydrolysis.FileLoader)</code>
+**Returns**: <code>Promise.&lt;string&gt;</code> - A promise that resolves to the contents of the URL.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -305,7 +305,7 @@ identical urls
 
 <a name="hydrolysis.FSResolver"></a>
 ### hydrolysis.FSResolver
-**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>
 <a name="new_hydrolysis.FSResolver_new"></a>
 #### new FSResolver(config)
 Resolves requests via the file system.
@@ -321,7 +321,7 @@ Resolves requests via the file system.
 
 <a name="hydrolysis.NoopResolver"></a>
 ### hydrolysis.NoopResolver
-**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>
 
 * [.NoopResolver](#hydrolysis.NoopResolver)
   * [new NoopResolver(config)](#new_hydrolysis.NoopResolver_new)
@@ -338,8 +338,8 @@ A resolver that resolves to null any uri matching config.
 
 <a name="hydrolysis.NoopResolver+accept"></a>
 #### noopResolver.accept(uri, deferred) ⇒ <code>boolean</code>
-**Kind**: instance method of <code>[NoopResolver](#hydrolysis.NoopResolver)</code>  
-**Returns**: <code>boolean</code> - Whether the URI is handled by this resolver.  
+**Kind**: instance method of <code>[NoopResolver](#hydrolysis.NoopResolver)</code>
+**Returns**: <code>boolean</code> - Whether the URI is handled by this resolver.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -348,7 +348,7 @@ A resolver that resolves to null any uri matching config.
 
 <a name="hydrolysis.RedirectResolver"></a>
 ### hydrolysis.RedirectResolver
-**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>
 <a name="new_hydrolysis.RedirectResolver_new"></a>
 #### new RedirectResolver(config, redirects)
 Resolves protocol://hostname/path to the local filesystem.
@@ -362,7 +362,7 @@ Resolves protocol://hostname/path to the local filesystem.
 
 <a name="hydrolysis.XHRResolver"></a>
 ### hydrolysis.XHRResolver
-**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static class of <code>[hydrolysis](#hydrolysis)</code>
 <a name="new_hydrolysis.XHRResolver_new"></a>
 #### new XHRResolver(config)
 Construct a resolver that requests resources over XHR.
@@ -377,17 +377,17 @@ Construct a resolver that requests resources over XHR.
 ### hydrolysis.DocumentAST : <code>Object</code>
 Parse5's representation of a parsed html document
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 <a name="hydrolysis.JSAST"></a>
 ### hydrolysis.JSAST : <code>Object</code>
 espree's representation of a parsed html document
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 <a name="hydrolysis.ParsedJS"></a>
 ### hydrolysis.ParsedJS : <code>Object</code>
 Package of a parsed JS script
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 **Properties**
 
 | Name | Type | Description |
@@ -399,22 +399,22 @@ Package of a parsed JS script
 ### hydrolysis.ElementDescriptor : <code>Object</code>
 The metadata for a single polymer element
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 <a name="hydrolysis.FeatureDescriptor"></a>
 ### hydrolysis.FeatureDescriptor : <code>Object</code>
 The metadata for a Polymer feature.
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 <a name="hydrolysis.BehaviorDescriptor"></a>
 ### hydrolysis.BehaviorDescriptor : <code>Object</code>
 The metadata for a Polymer behavior mixin.
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 <a name="hydrolysis.DocumentDescriptor"></a>
 ### hydrolysis.DocumentDescriptor : <code>Object</code>
 The metadata for all features and elements defined in one document
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 **Properties**
 
 | Name | Type | Description |
@@ -427,7 +427,7 @@ The metadata for all features and elements defined in one document
 ### hydrolysis.AnalyzedDocument : <code>Object</code>
 The metadata of an entire HTML document, in promises.
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 **Properties**
 
 | Name | Type | Description |
@@ -442,7 +442,7 @@ The metadata of an entire HTML document, in promises.
 ### hydrolysis.LoadOptions : <code>Object</code>
 Options for `Analyzer.analzye`
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 **Properties**
 
 | Name | Type | Description |
@@ -455,7 +455,7 @@ Options for `Analyzer.analzye`
 ### hydrolysis.Resolver : <code>Object</code>
 An object that knows how to resolve resources.
 
-**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>  
+**Kind**: static typedef of <code>[hydrolysis](#hydrolysis)</code>
 **Properties**
 
 | Name | Type | Description |
@@ -466,18 +466,18 @@ An object that knows how to resolve resources.
 ## isSiblingOrAunt() ⇒ <code>boolean</code>
 Returns true if `patha` is a sibling or aunt of `pathb`.
 
-**Kind**: global function  
+**Kind**: global function
 <a name="redirectSibling"></a>
 ## redirectSibling() ⇒ <code>string</code>
 Change `localPath` from a sibling of `basePath` to be a child of
 `basePath` joined with `redirect`.
 
-**Kind**: global function  
+**Kind**: global function
 <a name="ProtocolRedirect"></a>
 ## ProtocolRedirect(config)
 A single redirect configuration
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -498,19 +498,19 @@ A single redirect configuration
 ### protocolRedirect.protocol : <code>string</code>
 The protocol this redirect matches.
 
-**Kind**: instance property of <code>[ProtocolRedirect](#ProtocolRedirect)</code>  
+**Kind**: instance property of <code>[ProtocolRedirect](#ProtocolRedirect)</code>
 <a name="ProtocolRedirect+hostname"></a>
 ### protocolRedirect.hostname : <code>string</code>
 The host name this redirect matches.
 
-**Kind**: instance property of <code>[ProtocolRedirect](#ProtocolRedirect)</code>  
+**Kind**: instance property of <code>[ProtocolRedirect](#ProtocolRedirect)</code>
 <a name="ProtocolRedirect+path"></a>
 ### protocolRedirect.path : <code>string</code>
 The part of the path to match and replace with 'redirectPath'
 
-**Kind**: instance property of <code>[ProtocolRedirect](#ProtocolRedirect)</code>  
+**Kind**: instance property of <code>[ProtocolRedirect](#ProtocolRedirect)</code>
 <a name="ProtocolRedirect+redirectPath"></a>
 ### protocolRedirect.redirectPath : <code>string</code>
 The local filesystem path that should replace "protocol://hosname/path/"
 
-**Kind**: instance property of <code>[ProtocolRedirect](#ProtocolRedirect)</code>  
+**Kind**: instance property of <code>[ProtocolRedirect](#ProtocolRedirect)</code>

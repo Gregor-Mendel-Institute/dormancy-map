@@ -145,5 +145,3 @@ To style it:
     };
 </style>
 ```
-
-

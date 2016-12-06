@@ -53,5 +53,3 @@ Use `noOverlap` to position the element around another element without overlappi
     </iron-fit-impl>
   </div>
 ```
-
-

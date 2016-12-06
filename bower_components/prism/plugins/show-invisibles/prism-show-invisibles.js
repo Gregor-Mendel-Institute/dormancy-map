@@ -1,19 +1,19 @@
 (function(){
 
 if (
-	typeof self !== 'undefined' && !self.Prism ||
-	typeof global !== 'undefined' && !global.Prism
+        typeof self !== 'undefined' && !self.Prism ||
+        typeof global !== 'undefined' && !global.Prism
 ) {
-	return;
+        return;
 }
 
 Prism.hooks.add('before-highlight', function(env) {
-	var tokens = env.grammar;
+        var tokens = env.grammar;
 
-	tokens.tab = /\t/g;
-	tokens.crlf = /\r\n/g;
-	tokens.lf = /\n/g;
-	tokens.cr = /\r/g;
-	tokens.space = / /g;
+        tokens.tab = /\t/g;
+        tokens.crlf = /\r\n/g;
+        tokens.lf = /\n/g;
+        tokens.cr = /\r/g;
+        tokens.space = / /g;
 });
 })();

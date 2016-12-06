@@ -58,5 +58,3 @@ describe "Calling with new", ->
             expect(-> spy.should.always.have.been.calledWithNew).to.throw(AssertionError)
             expect(-> spy.should.have.always.been.calledWithNew).to.throw(AssertionError)
             expect(-> spy.should.have.been.always.calledWithNew).to.throw(AssertionError)
-
-

@@ -62,5 +62,3 @@ The following custom properties and mixins are available for styling:
 | Custom property | Description | Default |
 | --- | --- | --- |
 | `--iron-collapse-transition-duration` | Animation transition duration | `300ms` |
-
-

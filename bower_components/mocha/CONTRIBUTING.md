@@ -13,7 +13,7 @@ Hi!  We could use your help.  Let us help you help us.  Or something.
 ## Bug Reports & Issues
 
 1.  When reporting a bug, please **provide steps to reproduce**.  If possible, show code.
-  
+
 2.  Please **show all code in JavaScript**.  We don't all read `<insert-language-that-compiles-to-JavaScript-here>`.  If you do not, you will be asked to.
 
 3.  Because Mocha works with many third-party libraries and tools, **ensure the bug you are reporting is actually within Mocha**.
@@ -24,7 +24,7 @@ Hi!  We could use your help.  Let us help you help us.  Or something.
 
 1. Before sending a large PR, it's recommended to **create an issue to propose the change**.  Nobody wants to write a book of code and throw it away.
 
-2.  Because Mocha should be kept as maintainable as possible, its codebase must be kept slim.  Historically, *most PRs for new features are not merged*.  New features inevitably increase the size of the codebase, and thus reduce maintainability.  Only features *deemed essential* are likely to be merged--this is at the discretion of the maintainer(s).  If your PR for a feature is not merged, this doesn't necessarily mean your PR was a bad idea, wouldn't be used, or otherwise sucks.  It just means **only essential PRs for new features are likely to be merged**. 
+2.  Because Mocha should be kept as maintainable as possible, its codebase must be kept slim.  Historically, *most PRs for new features are not merged*.  New features inevitably increase the size of the codebase, and thus reduce maintainability.  Only features *deemed essential* are likely to be merged--this is at the discretion of the maintainer(s).  If your PR for a feature is not merged, this doesn't necessarily mean your PR was a bad idea, wouldn't be used, or otherwise sucks.  It just means **only essential PRs for new features are likely to be merged**.
 
 3.  Due to the above, before creating a PR for a new feature, **create an issue to propose the feature.**
 
@@ -38,8 +38,8 @@ Hi!  We could use your help.  Let us help you help us.  Or something.
 
 ## Source Control
 
-1. Please **squash your commits** when sending a pull request.  If you are unfamiliar with this process, see [this guide](https://help.github.com/articles/about-git-rebase/).  If you have already pushed your changesets and are squashing thereafter, this may necessitate the use of a "force push".  Please [read the docs](http://git-scm.com/docs/git-push) before you attempt this. 
- 
+1. Please **squash your commits** when sending a pull request.  If you are unfamiliar with this process, see [this guide](https://help.github.com/articles/about-git-rebase/).  If you have already pushed your changesets and are squashing thereafter, this may necessitate the use of a "force push".  Please [read the docs](http://git-scm.com/docs/git-push) before you attempt this.
+
 2. Please **follow the commit message conventions [outlined here](https://medium.com/code-adventures/git-conventions-a940ee20862d).**
 
 ## TL;DR

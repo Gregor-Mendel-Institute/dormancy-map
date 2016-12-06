@@ -55,5 +55,3 @@ is separate from validation, and `allowed-pattern` does not affect how the input
 <!-- only allow characters that match [0-9] -->
 <input is="iron-input" prevent-invalid-input allowed-pattern="[0-9]">
 ```
-
-

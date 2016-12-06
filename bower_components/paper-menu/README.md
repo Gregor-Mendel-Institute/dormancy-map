@@ -109,5 +109,3 @@ Just like in `<paper-menu>`, the focused item is highlighted, and the selected
 item has bolded text. Please see the `<paper-menu>` docs for which attributes
 (such as `multi` and `selected`), and styling options are available for the
 `menu-content` menu.
-
-

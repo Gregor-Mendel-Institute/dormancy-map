@@ -26,24 +26,24 @@ Example:
   var DEFAULT_COLORS10  =  ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf"];
 
   Polymer({
-  
+
     is: 'canvas-piechart',
-    
+
     properties: {
       /**
       * The `colors` attribute specifies the colors to be used for each slice.
       * If no colors are specified then the default-colors are used.
-      * 
+      *
       * @attribute colors
       */
       colors: {
-        type:Array, 
+        type:Array,
         value: function() { return []; }
       },
 
       /**
       * The `size` property specifies the size of the piechart (Default: 50).
-      * 
+      *
       * @attribute size
       */
       size: {
@@ -53,13 +53,13 @@ Example:
 
       /**
        * The `data` property specifies the values for each slice .
-       * 
+       *
        * @attribute data
       */
       data : {
         type:Array,
         value: function() { return []; }
-      } 
+      }
     },
     observers: [
       'render(colors,data,size)'
@@ -109,5 +109,3 @@ Example:
 })();
 
 </script>
-
-

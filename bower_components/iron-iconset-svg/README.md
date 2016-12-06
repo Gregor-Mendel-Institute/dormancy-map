@@ -46,5 +46,3 @@ to retrieve a given iconset. To apply a particular icon inside an
 element use the `applyIcon` method. For example:
 
     iconset.applyIcon(iconNode, 'car');
-
-

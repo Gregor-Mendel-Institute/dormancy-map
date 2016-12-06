@@ -32,5 +32,3 @@ when they are resized explicitly by another resizable, or when the window has be
 resized.
 
 Note, the `iron-resize` event is non-bubbling.
-
-

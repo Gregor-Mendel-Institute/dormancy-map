@@ -88,5 +88,3 @@ The following custom properties are available for styling:
 | `--iron-icon-height` | Height of the icon | `24px` |
 | `--iron-icon-fill-color` | Fill color of the svg icon | `currentcolor` |
 | `--iron-icon-stroke-color` | Stroke color of the svg icon | none |
-
-

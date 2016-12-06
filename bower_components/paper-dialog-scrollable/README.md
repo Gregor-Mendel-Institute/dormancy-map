@@ -72,5 +72,3 @@ The following custom properties and mixins are available for styling:
 | Custom property | Description | Default |
 | --- | --- | --- |
 | `--paper-dialog-scrollable` | Mixin for the scrollable content | {} |
-
-

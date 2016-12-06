@@ -38,5 +38,3 @@ for an example.
 
 Changing the `invalid` property, either manually or by calling `validate()` will update the
 `aria-invalid` attribute.
-
-

@@ -31,5 +31,3 @@ Example:
   ... content ...
 </paper-material>
 ```
-
-

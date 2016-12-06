@@ -26,5 +26,3 @@ _[Demo and API docs](https://elements.polymer-project.org/elements/iron-menu-beh
 ##Polymer.IronMenubarBehavior
 
 `Polymer.IronMenubarBehavior` implements accessible menubar behavior.
-
-

@@ -61,5 +61,3 @@ want to be swiped:
   cursor: default;
 }
 ```
-
-

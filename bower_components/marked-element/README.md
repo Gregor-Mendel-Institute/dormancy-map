@@ -70,5 +70,3 @@ as you would a regular DOM element:
   padding-left: 24px;
 }
 ```
-
-

@@ -40,5 +40,3 @@ when the element has focus via pointer or keyboard.
 
 NOTE: This behavior is intended to be used in conjunction with and after
 `Polymer.IronButtonState` and `Polymer.IronControlState`.
-
-

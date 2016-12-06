@@ -75,4 +75,3 @@ describe "Call context", ->
             expect(-> spy.should.always.have.been.calledOn(target)).to.throw(AssertionError)
             expect(-> spy.should.have.always.been.calledOn(target)).to.throw(AssertionError)
             expect(-> spy.should.have.been.always.calledOn(target)).to.throw(AssertionError)
-

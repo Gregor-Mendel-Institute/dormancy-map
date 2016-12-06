@@ -34,4 +34,3 @@ Promise.race = Promise.race || function (values) {
     }
   });
 };
-

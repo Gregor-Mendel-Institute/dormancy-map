@@ -54,4 +54,3 @@ function normalize(error, prettyOptions) {
 
 scope.normalize = normalize;
 })(typeof module !== 'undefined' ? module.exports : (this.Stacky = this.Stacky || {}));
-

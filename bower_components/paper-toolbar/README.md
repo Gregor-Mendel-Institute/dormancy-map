@@ -103,5 +103,3 @@ The following custom properties and mixins are available for styling:
 
 `<paper-toolbar>` has `role="toolbar"` by default. Any elements with the class `title` will
 be used as the label of the toolbar via `aria-labelledby`.
-
-

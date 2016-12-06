@@ -51,5 +51,3 @@ this.fire('iron-announce', {
 ```
 
 Note: announcements are only audible if you have a screen reader enabled.
-
-

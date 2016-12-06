@@ -155,4 +155,3 @@ function isImportant(line, options) {
 scope.clean  = clean;
 scope.pretty = pretty;
 })(typeof module !== 'undefined' ? module.exports : (this.Stacky = this.Stacky || {}));
-

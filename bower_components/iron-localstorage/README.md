@@ -84,5 +84,3 @@ __Warning__: do not bind value to sub-properties until Polymer
 [bug 1550](https://github.com/Polymer/polymer/issues/1550)
 is resolved. Local storage will be blown away.
 `<iron-localstorage value="{{foo.bar}}"` will cause __data loss__.
-
-

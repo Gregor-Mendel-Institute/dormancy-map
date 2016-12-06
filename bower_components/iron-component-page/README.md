@@ -22,5 +22,3 @@ _[Demo and API docs](https://elements.polymer-project.org/elements/iron-componen
 Loads Polymer element and behavior documentation using
 [Hydrolysis](https://github.com/PolymerLabs/hydrolysis) and renders a complete
 documentation page including demos (if available).
-
-

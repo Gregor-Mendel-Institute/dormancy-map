@@ -142,5 +142,3 @@ However, having an `iron-list` does not mean that you can load all the data at o
 Say, you have a million records in the database, you want to split the data into pages
 so you can bring a page at the time. The page could contain 500 items, and iron-list
 will only render 20.
-
-

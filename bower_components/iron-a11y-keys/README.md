@@ -136,5 +136,3 @@ to methods. The `increment` method should move the slider a set amount
 toward the maximum value. `decrement` should move the slider a set amount
 toward the minimum value. `setMin` should move the slider to the minimum
 value. `setMax` should move the slider to the maximum value.
-
-

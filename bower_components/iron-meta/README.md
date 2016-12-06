@@ -89,5 +89,3 @@ Or, in a Polymer element, you can include a meta in your template:
     <iron-meta id="meta"></iron-meta>
     ...
     this.$.meta.byKey('info').getAttribute('value');
-
-

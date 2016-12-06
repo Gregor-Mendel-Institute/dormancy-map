@@ -24,5 +24,3 @@ The `query-matches` property is a boolean representing whether the page matches 
 Example:
 
     <iron-media-query query="(min-width: 600px)" query-matches="{{queryMatches}}"></iron-media-query>
-
-

@@ -61,5 +61,3 @@ The following custom properties and mixins are available for styling:
 | `--paper-card-content` | Mixin applied to the card content section | `{}` |
 | `--paper-card-actions` | Mixin applied to the card action section | `{}` |
 | `--paper-card` | Mixin applied to the card | `{}` |
-
-

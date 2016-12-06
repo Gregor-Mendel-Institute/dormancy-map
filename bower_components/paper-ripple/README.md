@@ -86,5 +86,3 @@ Apply `circle` class to make the rippling effect within a circle.
 ```html
 <paper-ripple class="circle"></paper-ripple>
 ```
-
-

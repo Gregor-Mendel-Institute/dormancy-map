@@ -58,5 +58,3 @@ The following custom properties and mixins are available for styling:
 | `--paper-tooltip-opacity` | The opacity of the tooltip | `0.9` |
 | `--paper-tooltip-text-color` | The text color of the tooltip | `white` |
 | `--paper-tooltip` | Mixin applied to the tooltip | `{}` |
-
-

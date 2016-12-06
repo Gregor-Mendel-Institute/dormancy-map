@@ -52,5 +52,3 @@ iron-request can be used to perform XMLHttpRequests.
 ...
 this.$.xhr.send({url: url, body: params});
 ```
-
-

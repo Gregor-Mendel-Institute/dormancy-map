@@ -88,5 +88,3 @@ your app.
 [1]: http://updates.html5rocks.com/2015/03/push-notificatons-on-the-open-web
 [2]: https://developer.android.com/google/gcm/http.html
 [3]: https://github.com/notwaldorf/caturday-post
-
-

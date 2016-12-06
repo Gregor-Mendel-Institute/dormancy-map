@@ -44,5 +44,3 @@ to create specific library loader elements.
 
     You should use an HTML Import to load library dependencies
     when possible instead of using this element.
-
-    

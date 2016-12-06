@@ -71,5 +71,3 @@ For example:
 
 See the docs for `Polymer.PaperDialogBehavior` for accessibility features implemented by this
 element.
-
-

@@ -74,5 +74,3 @@ The following custom properties and mixins are available for styling.
 | `--iron-overlay-backdrop-opacity` | Backdrop opacity | 0.6 |
 | `--iron-overlay-backdrop` | Mixin applied to `iron-overlay-backdrop`. | {} |
 | `--iron-overlay-backdrop-opened` | Mixin applied to `iron-overlay-backdrop` when it is displayed | {} |
-
-

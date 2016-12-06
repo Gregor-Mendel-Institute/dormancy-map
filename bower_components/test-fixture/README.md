@@ -144,5 +144,3 @@ It would be trivial in the above example to simply reset `someElement.foo` to
 the expected default value of `undefined` in an `afterEach` hook. However, for
 non-contrived test suites that target complex elements, this can result in a
 large quantity of ever-growing set-up and tear-down boilerplate.
-
-

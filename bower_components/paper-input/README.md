@@ -250,5 +250,3 @@ template.
 
 The input element can be accessed by the `inputElement` property if you need to access
 properties or methods that are not exposed.
-
-

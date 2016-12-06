@@ -37,5 +37,3 @@ The following custom properties and mixins are available for styling:
 | --- | --- | --- |
 | `--iron-autogrow-textarea` | Mixin applied to the textarea | `{}` |
 | `--iron-autogrow-textarea-placeholder` | Mixin applied to the textarea placeholder | `{}` |
-
-

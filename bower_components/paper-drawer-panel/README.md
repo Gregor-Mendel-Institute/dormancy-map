@@ -143,5 +143,3 @@ The following custom properties and mixins are available for styling:
 | `--paper-drawer-panel-main-container` | Mixin applied to main container | {} |
 | `--paper-drawer-panel-right-drawer-container` | Mixin applied to container when it's in the right side | {} |
 | `--paper-drawer-panel-scrim` | Mixin applied to scrim | {} |
-
-

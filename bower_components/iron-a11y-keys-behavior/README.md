@@ -54,5 +54,3 @@ node.
 
 See the [demo source code](https://github.com/PolymerElements/iron-a11y-keys-behavior/blob/master/demo/x-key-aware.html)
 for an example.
-
-

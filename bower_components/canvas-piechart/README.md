@@ -10,7 +10,7 @@
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install --save canvas-piechart 
+$ bower install --save canvas-piechart
 ```
 
 Or [download as ZIP](https://github.com/timeu/canvas-piechart/archive/master.zip).

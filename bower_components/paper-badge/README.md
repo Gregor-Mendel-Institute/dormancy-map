@@ -63,5 +63,3 @@ The following custom properties and mixins are available for styling:
 | `--paper-badge-margin-left` | Optional spacing added to the left of the badge. | `0px` |
 | `--paper-badge-margin-bottom` | Optional spacing added to the bottom of the badge. | `0px` |
 | `--paper-badge` | Mixin applied to the badge | `{}` |
-
-

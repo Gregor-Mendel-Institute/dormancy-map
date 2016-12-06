@@ -66,5 +66,3 @@ element in the same document or ShadowRoot:
 
 
 All taps on the `iron-label` will be forwarded to the "target" element.
-
-

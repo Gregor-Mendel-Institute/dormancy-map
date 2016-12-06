@@ -52,5 +52,3 @@ The following custom properties and mixins are available for styling:
 | `--paper-fab-mini` | Mixin applied to a mini button | `{}` |
 | `--paper-fab-disabled` | Mixin applied to a disabled button | `{}` |
 | `--paper-fab-iron-icon` | Mixin applied to the iron-icon within the button | `{}` |
-
-

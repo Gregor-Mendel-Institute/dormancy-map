@@ -51,5 +51,3 @@ Please note that the new version does not use `/deep/`, and therefore requires y
 to import the `dom-modules` in every element that needs to use them.
 
 A complete [guide](https://elements.polymer-project.org/guides/flex-layout) to `<iron-flex-layout>` is available.
-
-

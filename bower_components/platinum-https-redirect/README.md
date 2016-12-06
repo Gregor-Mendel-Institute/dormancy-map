@@ -42,5 +42,3 @@ It can be used by just adding it to any page, e.g.
 ```html
 <platinum-https-redirect></platinum-https-redirect>
 ```
-
-

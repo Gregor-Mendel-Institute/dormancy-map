@@ -45,5 +45,3 @@ used in the PolymerElements demo pages
 
 We recommend importing each of these individual files, and using the style mixins
 available in each ones, rather than the aggregated `paper-styles.html` as a whole.
-
-

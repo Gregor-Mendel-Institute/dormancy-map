@@ -16,12 +16,12 @@ jsxExpression = Prism.languages.insertBefore('jsx', 'operator', {
 }, { jsx: jsxExpression });
 
 Prism.languages.insertBefore('inside', 'attr-value',{
-	'script': {
-		// Allow for one level of nesting
-		pattern: /=(\{(?:\{[^}]*\}|[^}])+\})/i,
-		inside: jsxExpression,
-		'alias': 'language-javascript'
-	}
+        'script': {
+                // Allow for one level of nesting
+                pattern: /=(\{(?:\{[^}]*\}|[^}])+\})/i,
+                inside: jsxExpression,
+                'alias': 'language-javascript'
+        }
 }, Prism.languages.jsx.tag);
 
 }(Prism));

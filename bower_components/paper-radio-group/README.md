@@ -55,5 +55,3 @@ information about `paper-radio-button`.
 | Custom property | Description | Default |
 | --- | --- | --- |
 | `--paper-radio-group-item-padding` | The padding of the item | `12px` |
-
-

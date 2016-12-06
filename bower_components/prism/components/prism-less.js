@@ -7,54 +7,54 @@
  */
 
 Prism.languages.less = Prism.languages.extend('css', {
-	'comment': [
-		/\/\*[\w\W]*?\*\//,
-		{
-			pattern: /(^|[^\\])\/\/.*/,
-			lookbehind: true
-		}
-	],
-	'atrule': {
-		pattern: /@[\w-]+?(?:\([^{}]+\)|[^(){};])*?(?=\s*\{)/i,
-		inside: {
-			'punctuation': /[:()]/
-		}
-	},
-	// selectors and mixins are considered the same
-	'selector': {
-		pattern: /(?:@\{[\w-]+\}|[^{};\s@])(?:@\{[\w-]+\}|\([^{}]*\)|[^{};@])*?(?=\s*\{)/,
-		inside: {
-			// mixin parameters
-			'variable': /@+[\w-]+/
-		}
-	},
+        'comment': [
+                /\/\*[\w\W]*?\*\//,
+                {
+                        pattern: /(^|[^\\])\/\/.*/,
+                        lookbehind: true
+                }
+        ],
+        'atrule': {
+                pattern: /@[\w-]+?(?:\([^{}]+\)|[^(){};])*?(?=\s*\{)/i,
+                inside: {
+                        'punctuation': /[:()]/
+                }
+        },
+        // selectors and mixins are considered the same
+        'selector': {
+                pattern: /(?:@\{[\w-]+\}|[^{};\s@])(?:@\{[\w-]+\}|\([^{}]*\)|[^{};@])*?(?=\s*\{)/,
+                inside: {
+                        // mixin parameters
+                        'variable': /@+[\w-]+/
+                }
+        },
 
-	'property': /(?:@\{[\w-]+\}|[\w-])+(?:\+_?)?(?=\s*:)/i,
-	'punctuation': /[{}();:,]/,
-	'operator': /[+\-*\/]/
+        'property': /(?:@\{[\w-]+\}|[\w-])+(?:\+_?)?(?=\s*:)/i,
+        'punctuation': /[{}();:,]/,
+        'operator': /[+\-*\/]/
 });
 
 // Invert function and punctuation positions
 Prism.languages.insertBefore('less', 'punctuation', {
-	'function': Prism.languages.less.function
+        'function': Prism.languages.less.function
 });
 
 Prism.languages.insertBefore('less', 'property', {
-	'variable': [
-		// Variable declaration (the colon must be consumed!)
-		{
-			pattern: /@[\w-]+\s*:/,
-			inside: {
-				"punctuation": /:/
-			}
-		},
+        'variable': [
+                // Variable declaration (the colon must be consumed!)
+                {
+                        pattern: /@[\w-]+\s*:/,
+                        inside: {
+                                "punctuation": /:/
+                        }
+                },
 
-		// Variable usage
-		/@@?[\w-]+/
-	],
-	'mixin-usage': {
-		pattern: /([{;]\s*)[.#](?!\d)[\w-]+.*?(?=[(;])/,
-		lookbehind: true,
-		alias: 'function'
-	}
+                // Variable usage
+                /@@?[\w-]+/
+        ],
+        'mixin-usage': {
+                pattern: /([{;]\s*)[.#](?!\d)[\w-]+.*?(?=[(;])/,
+                lookbehind: true,
+                alias: 'function'
+        }
 });

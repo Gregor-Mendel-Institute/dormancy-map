@@ -40,5 +40,3 @@ Example using the directions-bus icon from the maps icon set:
 See [iron-icon](#iron-icon) for more information about working with icons.
 
 See [iron-iconset](#iron-iconset) and [iron-iconset-svg](#iron-iconset-svg) for more information about how to create a custom iconset.
-
-

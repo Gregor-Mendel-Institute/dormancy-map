@@ -55,5 +55,3 @@ property.
 Renders documentation describing a specific property of an element.
 
 Give it a hydrolysis `PropertyDescriptor` (via `descriptor`), and watch it go!
-
-

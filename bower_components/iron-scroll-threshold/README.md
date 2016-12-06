@@ -76,5 +76,3 @@ triggered property.
   </iron-list>
 </iron-scroll-threshold>
 ```
-
-

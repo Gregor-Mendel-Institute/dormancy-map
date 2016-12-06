@@ -69,5 +69,3 @@ The following custom properties and mixins are available for styling:
 | Custom property | Description | Default |
 | --- | --- | --- |
 | `--url-bar` | Mixin applied to the entire element | `{}` |
-
-
